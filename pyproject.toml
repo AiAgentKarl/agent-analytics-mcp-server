@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-analytics-mcp-server"
+version = "0.1.0"
+description = "Usage analytics and monitoring for AI agent tool calls — track, analyze and optimize agent behavior"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [{name = "AiAgentKarl"}]
+keywords = ["mcp", "analytics", "monitoring", "ai-agents", "usage-tracking"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/AiAgentKarl/agent-analytics-mcp-server"
+Repository = "https://github.com/AiAgentKarl/agent-analytics-mcp-server"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
