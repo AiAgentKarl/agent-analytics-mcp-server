@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "agent-analytics-mcp-server"
-version = "0.1.0"
+version = "0.1.1"
 description = "Usage analytics and monitoring for AI agent tool calls — track, analyze and optimize agent behavior"
 readme = "README.md"
 license = {text = "MIT"}
